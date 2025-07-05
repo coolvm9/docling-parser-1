@@ -1,0 +1,6 @@
+fastapi
+uv
+docling
+pypdf2
+python-multipart
+jupyter
