@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run FastAPI app",
+			"type": "shell",
+			"command": "cd /Users/satyaanumolu/POCs/docling-parser-1 && uvicorn app.main:app --reload",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

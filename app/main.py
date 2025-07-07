@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import docling, health
+from app.api.v1.router import api_router
 
 app = FastAPI(
     title="Docling Parser API",
@@ -10,5 +10,4 @@ app = FastAPI(
     openapi_url="/openapi.json"
 )
 
-app.include_router(docling.router)
-app.include_router(health.router)
+app.include_router(api_router, prefix="/api/v1")

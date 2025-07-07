@@ -5,8 +5,11 @@ import tempfile
 import zipfile
 import pandas as pd
 import logging
+from app.core.logging import setup_logging
 
-logging.basicConfig(level=logging.INFO)
+# Setup logging
+setup_logging()
+
 logger = logging.getLogger(__name__)
 
 def extract_tables_to_csv(pdf_path: str) -> str:
